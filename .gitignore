@@ -24,3 +24,7 @@ local.properties
 /.tmp
 /android
 /caches
+/Gridle_for_Android_studio
+/app-debug.apk
+/Realise.apk
+/app/Realise.apk

@@ -7,4 +7,4 @@ v 0.3
 If you are working on something exciting that you really care about, you don't have to be pushed. The vision pulls you. 
 
 
-![image](https://user-images.githubusercontent.com/118602434/202856294-2b37b98f-b8f6-430c-b839-d0fb20233c1e.png)
+<p align="center">![image](https://user-images.githubusercontent.com/118602434/202856294-2b37b98f-b8f6-430c-b839-d0fb20233c1e.png)</p>

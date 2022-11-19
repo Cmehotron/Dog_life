@@ -15,7 +15,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
+
 
     buildTypes {
         release {
@@ -33,7 +35,7 @@ android {
     buildFeatures{
         viewBinding true
     }
-	//Test 1
+
 }
 
 dependencies {
@@ -46,3 +48,24 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 }
+
+
+tasks.register ("copy_f"){
+    doLast {
+        copy {
+            println('Fermiums realise apk')
+            from("$buildDir/outputs/apk/debug/app-debug.apk")
+            into("$buildDir../../../APK/")
+            rename { filename ->
+                filename.replace 'app-debug.apk', 'Realise.apk'
+            }
+        }
+    }
+}
+
+afterEvaluate {
+    createDebugApkListingFileRedirect.dependsOn(copy_f)
+}
+
+
+
