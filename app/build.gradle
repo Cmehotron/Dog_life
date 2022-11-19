@@ -33,6 +33,7 @@ android {
     buildFeatures{
         viewBinding true
     }
+	//Test 2
 }
 
 dependencies {
