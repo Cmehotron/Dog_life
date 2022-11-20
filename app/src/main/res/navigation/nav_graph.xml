@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/profile">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.dog_life.Profile"
+        android:label="Profile" >
+        <action
+            android:id="@+id/action_profile_to_calendar"
+            app:destination="@id/calendar" />
+        <action
+            android:id="@+id/action_profile_to_about_us"
+            app:destination="@id/about_us" />
+        <action
+            android:id="@+id/action_profile_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_profile_to_maps"
+            app:destination="@id/maps" />
+        <action
+            android:id="@+id/action_profile_to_help"
+            app:destination="@id/help" />
+    </fragment>
+    <fragment
+        android:id="@+id/about_us"
+        android:name="com.example.dog_life.About_us"
+        android:label="About_us" />
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.dog_life.Calendar"
+        android:label="Calendar" />
+    <fragment
+        android:id="@+id/help"
+        android:name="com.example.dog_life.Help"
+        android:label="Help" />
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.example.dog_life.Maps"
+        android:label="Maps" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.dog_life.Settings"
+        android:label="Settings" />
+</navigation>
