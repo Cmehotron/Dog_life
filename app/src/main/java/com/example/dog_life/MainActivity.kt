@@ -16,9 +16,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // устанавливаем свою реализацию тулбара
-        setSupportActionBar(toolbar)
+      //  setSupportActionBar(toolbar)
 
-        val navController = findNavController(R.id.fragment_container)
+       // val navController = findNavController(R.id.fragment_container)
 
         // конфигурация тулбара
         //appBarConfig = AppBarConfiguration(navController.graph, drawer_layout)
@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     // отслеживает клик по иконке гамбургера и стрелке UP
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.fragment_container)
-        return navController.navigateUp(appBarConfig) || super.onSupportNavigateUp()
-    }
+   // override fun onSupportNavigateUp(): Boolean {
+    //    val navController = findNavController(R.id.fragment_container)
+   //     return navController.navigateUp(appBarConfig) || super.onSupportNavigateUp()
+  //  }
 }
