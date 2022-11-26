@@ -5,57 +5,27 @@
     android:id="@+id/drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:menu="@menu/menu_left"
+    tools:openDrawer="start">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        ></LinearLayout>
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/menu_left"
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
-        android:background="#C0C3A1"
-        android:orientation="vertical"
-        android:layout_gravity="start">
-
-        <Button
-            android:id="@+id/button"
+        <ImageView
+            android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Profile" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Calendar" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Maps" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Help" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Settings" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="About us" />
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher" />
     </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/menu_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_left" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
